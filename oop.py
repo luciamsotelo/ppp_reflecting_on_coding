@@ -17,6 +17,33 @@ class SebulbasPod(Podracer):
     def flame_jet(self, other_pod):
         other_pod.condition = "trashed"
 
+
+# Example usage:
+# Create an instance of Podracer
+podracer1 = Podracer(500, "perfect", 1000)
+print("Podracer 1 - Condition:", podracer1.condition)
+
+# Use repair method on podracer1
+podracer1.repair()
+print("Podracer 1 after repair - Condition:", podracer1.condition)
+
+# Create an instance of AnakinsPod
+anakins_pod = AnakinsPod(800, "trashed", 2000)
+print("Anakin's Pod - Max Speed:", anakins_pod.max_speed)
+
+# Use boost method on anakins_pod
+anakins_pod.boost()
+print("Anakin's Pod after boost - Max Speed:", anakins_pod.max_speed)
+
+# Create another instance of Podracer
+podracer2 = Podracer(600, "perfect", 1500)
+print("Podracer 2 - Condition:", podracer2.condition)
+
+# Create an instance of SebulbasPod
+sebulbas_pod = SebulbasPod(700, "perfect", 1800)
+print("Sebulba's Pod - Condition:", sebulbas_pod.condition)
+
+
 # ONCE AN OBJECT ORIENTED SOLUTION HAS BEEN IMPLEMENTED, ANSWER THE FOLLOWING QUESTIONS:
 # how does this solution demonstrate the four pillars of OOP? (this may not demonstrate all of them describe only those that apply)
 
