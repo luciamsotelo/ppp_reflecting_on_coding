@@ -3,7 +3,7 @@
 def flatten_and_sort(array):
     flattened = sum(array, [])
     return sorted(flattened)
-  
+
 array = [[3, 2, 1], [7, 9, 8], [6, 5, 4]]
 result = flatten_and_sort(array)
 print(result)
@@ -41,25 +41,8 @@ print(result)
 # 5) WHY IN PARTICULAR IS FUNCTIONAL PROGRAMMING A HELPFUL PARADIGM WHEN SOLVING THIS PROBLEM?
 # it is helpful because it keeps the code unchanged or immutable. it makes writing the functions in the same way to make it easier to understand and have less mistakes/
 
-# OBJECT ORIENTED PROMPT
 
-class Podracer:
-    def __init__(self, max_speed, condition, price):
-        self.max_speed = max_speed
-        self.condition = condition
-        self.price = price
 
-    def repair(self):
-        self.condition = "repaired"
 
-class AnakinsPod(Podracer):
-    def boost(self):
-        self.max_speed *= 2
 
-class SebulbasPod(Podracer):
-    def flame_jet(self, other_pod):
-        other_pod.condition = "trashed"
 
-# ONCE AN OBJECT ORIENTED SOLUTION HAS BEEN IMPLEMENTED, ANSWER THE FOLLOWING QUESTIONS:
-# how does this solution demonstrate the four pillars of OOP? (this may not demonstrate all of them describe only those that apply)
-# 
